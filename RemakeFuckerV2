@@ -1,0 +1,434 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local BanGUI = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Placeholder = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local ImageLabel = Instance.new("ImageLabel")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+local TextLabel = Instance.new("TextLabel")
+local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
+local UIAspectRatioConstraint_3 = Instance.new("UIAspectRatioConstraint")
+local Frame = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local UIAspectRatioConstraint_4 = Instance.new("UIAspectRatioConstraint")
+local Players = Instance.new("Frame")
+local UICorner_4 = Instance.new("UICorner")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local UIListLayout = Instance.new("UIListLayout")
+local UIAspectRatioConstraint_5 = Instance.new("UIAspectRatioConstraint")
+local UIAspectRatioConstraint_6 = Instance.new("UIAspectRatioConstraint")
+local Ban = Instance.new("Frame")
+local UICorner_5 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local UIAspectRatioConstraint_7 = Instance.new("UIAspectRatioConstraint")
+local player = Instance.new("TextBox")
+local UIAspectRatioConstraint_8 = Instance.new("UIAspectRatioConstraint")
+local reason = Instance.new("TextBox")
+local UIAspectRatioConstraint_9 = Instance.new("UIAspectRatioConstraint")
+local time = Instance.new("TextBox")
+local UIAspectRatioConstraint_10 = Instance.new("UIAspectRatioConstraint")
+local ban = Instance.new("TextButton")
+local UIAspectRatioConstraint_11 = Instance.new("UIAspectRatioConstraint")
+local unban = Instance.new("TextButton")
+local UIAspectRatioConstraint_12 = Instance.new("UIAspectRatioConstraint")
+local status = Instance.new("TextLabel")
+local UIAspectRatioConstraint_13 = Instance.new("UIAspectRatioConstraint")
+local UIAspectRatioConstraint_14 = Instance.new("UIAspectRatioConstraint")
+local UIAspectRatioConstraint_15 = Instance.new("UIAspectRatioConstraint")
+local Template = Instance.new("Folder")
+local player_2 = Instance.new("TextButton")
+local Scripts = Instance.new("Folder")
+local Open = Instance.new("TextButton")
+local UIAspectRatioConstraint_16 = Instance.new("UIAspectRatioConstraint")
+
+--Properties:
+
+BanGUI.Name = "BanGUI"
+BanGUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+BanGUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+BanGUI.ResetOnSpawn = false
+
+Main.Name = "Main"
+Main.Parent = BanGUI
+Main.AnchorPoint = Vector2.new(0.5, 0.5)
+Main.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.5, 0, 0.5, 0)
+Main.Size = UDim2.new(0.655274868, 0, 0.625344336, 0)
+Main.Visible = false
+
+UICorner.CornerRadius = UDim.new(0, 15)
+UICorner.Parent = Main
+
+Placeholder.Name = "Placeholder"
+Placeholder.Parent = Main
+Placeholder.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Placeholder.BorderSizePixel = 0
+Placeholder.Position = UDim2.new(0.0315068476, 0, 0.0514905155, 0)
+Placeholder.Size = UDim2.new(0.364383548, 0, 0.100271001, 0)
+Placeholder.ZIndex = 3
+
+UICorner_2.CornerRadius = UDim.new(0, 5)
+UICorner_2.Parent = Placeholder
+
+ImageLabel.Parent = Placeholder
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 3.000
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0.785714447, 0, -0.13513504, 0)
+ImageLabel.Size = UDim2.new(0.273660541, 0, 1.24324322, 0)
+ImageLabel.Image = "rbxassetid://8051942771"
+ImageLabel.ImageColor3 = Color3.fromRGB(79, 79, 79)
+ImageLabel.ScaleType = Enum.ScaleType.Fit
+
+UIAspectRatioConstraint.Parent = ImageLabel
+UIAspectRatioConstraint.AspectRatio = 1.582
+
+TextLabel.Parent = Placeholder
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 2.000
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0, 0, 0.0810810775, 0)
+TextLabel.Size = UDim2.new(0.563909769, 0, 0.810810804, 0)
+TextLabel.Font = Enum.Font.GothamBold
+TextLabel.Text = "Remake Ender"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+UIAspectRatioConstraint_2.Parent = TextLabel
+UIAspectRatioConstraint_2.AspectRatio = 5.000
+
+UIAspectRatioConstraint_3.Parent = Placeholder
+UIAspectRatioConstraint_3.AspectRatio = 7.189
+
+Frame.Parent = Main
+Frame.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.0164383557, 0, 0.0271002706, 0)
+Frame.Size = UDim2.new(0.964383543, 0, 0.943089426, 0)
+
+UICorner_3.Parent = Frame
+
+UIAspectRatioConstraint_4.Parent = Frame
+UIAspectRatioConstraint_4.AspectRatio = 2.023
+
+Players.Name = "Players"
+Players.Parent = Main
+Players.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+Players.BorderSizePixel = 0
+Players.Position = UDim2.new(0.0315068476, 0, 0.178861782, 0)
+Players.Size = UDim2.new(0.364383548, 0, 0.772357702, 0)
+
+UICorner_4.Parent = Players
+
+ScrollingFrame.Parent = Players
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame.BackgroundTransparency = 2.000
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Position = UDim2.new(0.0263157897, 0, 0.0210526325, 0)
+ScrollingFrame.Size = UDim2.new(0.973684192, 0, 0.954385936, 0)
+
+UIListLayout.Parent = ScrollingFrame
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+
+UIAspectRatioConstraint_5.Parent = ScrollingFrame
+UIAspectRatioConstraint_5.AspectRatio = 0.952
+
+UIAspectRatioConstraint_6.Parent = Players
+UIAspectRatioConstraint_6.AspectRatio = 0.933
+
+Ban.Name = "Ban"
+Ban.Parent = Main
+Ban.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+Ban.BorderSizePixel = 0
+Ban.Position = UDim2.new(0.409589052, 0, 0.0514905155, 0)
+Ban.Size = UDim2.new(0.557534218, 0, 0.899729013, 0)
+
+UICorner_5.Parent = Ban
+
+TextLabel_2.Parent = Ban
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 3.000
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0, 0, 0.0813253, 0)
+TextLabel_2.Size = UDim2.new(1, 0, 0.0993975922, 0)
+TextLabel_2.Font = Enum.Font.Gotham
+TextLabel_2.Text = "Ban Player"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+UIAspectRatioConstraint_7.Parent = TextLabel_2
+UIAspectRatioConstraint_7.AspectRatio = 12.333
+
+player.Name = "player"
+player.Parent = Ban
+player.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+player.BorderSizePixel = 0
+player.Position = UDim2.new(0.0319410302, 0, 0.228915676, 0)
+player.Size = UDim2.new(0.936117947, 0, 0.0963855386, 0)
+player.Font = Enum.Font.GothamBold
+player.PlaceholderText = "Player Name"
+player.Text = ""
+player.TextColor3 = Color3.fromRGB(255, 255, 255)
+player.TextScaled = true
+player.TextSize = 14.000
+player.TextWrapped = true
+
+UIAspectRatioConstraint_8.Parent = player
+UIAspectRatioConstraint_8.AspectRatio = 11.906
+
+reason.Name = "reason"
+reason.Parent = Ban
+reason.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+reason.BorderSizePixel = 0
+reason.Position = UDim2.new(0.0319410302, 0, 0.352409661, 0)
+reason.Size = UDim2.new(0.936117947, 0, 0.0963855386, 0)
+reason.Font = Enum.Font.GothamBold
+reason.PlaceholderText = "Reason"
+reason.Text = ""
+reason.TextColor3 = Color3.fromRGB(255, 255, 255)
+reason.TextScaled = true
+reason.TextSize = 14.000
+reason.TextWrapped = true
+
+UIAspectRatioConstraint_9.Parent = reason
+UIAspectRatioConstraint_9.AspectRatio = 11.906
+
+time.Name = "time"
+time.Parent = Ban
+time.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+time.BorderSizePixel = 0
+time.Position = UDim2.new(0.0319410302, 0, 0.484939754, 0)
+time.Size = UDim2.new(0.314496309, 0, 0.0963855386, 0)
+time.Font = Enum.Font.GothamBold
+time.PlaceholderText = "Days"
+time.Text = ""
+time.TextColor3 = Color3.fromRGB(255, 255, 255)
+time.TextScaled = true
+time.TextSize = 14.000
+time.TextWrapped = true
+
+UIAspectRatioConstraint_10.Parent = time
+UIAspectRatioConstraint_10.AspectRatio = 4.000
+
+ban.Name = "ban"
+ban.Parent = Ban
+ban.BackgroundColor3 = Color3.fromRGB(145, 0, 0)
+ban.BorderSizePixel = 0
+ban.Position = UDim2.new(0.14004913, 0, 0.656626523, 0)
+ban.Size = UDim2.new(0.343980372, 0, 0.0963855386, 0)
+ban.Font = Enum.Font.GothamSemibold
+ban.Text = "BAN"
+ban.TextColor3 = Color3.fromRGB(255, 255, 255)
+ban.TextScaled = true
+ban.TextSize = 14.000
+ban.TextWrapped = true
+
+UIAspectRatioConstraint_11.Parent = ban
+UIAspectRatioConstraint_11.AspectRatio = 4.375
+
+unban.Name = "unban"
+unban.Parent = Ban
+unban.BackgroundColor3 = Color3.fromRGB(38, 145, 0)
+unban.BorderSizePixel = 0
+unban.Position = UDim2.new(0.520884514, 0, 0.656626523, 0)
+unban.Size = UDim2.new(0.343980372, 0, 0.0963855386, 0)
+unban.Font = Enum.Font.GothamSemibold
+unban.Text = "UNBAN"
+unban.TextColor3 = Color3.fromRGB(255, 255, 255)
+unban.TextScaled = true
+unban.TextSize = 14.000
+unban.TextWrapped = true
+
+UIAspectRatioConstraint_12.Parent = unban
+UIAspectRatioConstraint_12.AspectRatio = 4.375
+
+status.Name = "status"
+status.Parent = Ban
+status.BackgroundColor3 = Color3.fromRGB(255, 217, 0)
+status.BackgroundTransparency = 2.940
+status.BorderSizePixel = 0
+status.Position = UDim2.new(0, 0, 0.840361416, 0)
+status.Size = UDim2.new(1, 0, 0.0722891539, 0)
+status.Font = Enum.Font.Gotham
+status.Text = "STATUS: OK"
+status.TextColor3 = Color3.fromRGB(255, 247, 0)
+status.TextScaled = true
+status.TextSize = 14.000
+status.TextWrapped = true
+
+UIAspectRatioConstraint_13.Parent = status
+UIAspectRatioConstraint_13.AspectRatio = 16.958
+
+UIAspectRatioConstraint_14.Parent = Ban
+UIAspectRatioConstraint_14.AspectRatio = 1.226
+
+UIAspectRatioConstraint_15.Parent = Main
+UIAspectRatioConstraint_15.AspectRatio = 1.978
+
+Template.Name = "Template"
+Template.Parent = BanGUI
+
+player_2.Name = "player"
+player_2.Parent = Template
+player_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+player_2.BackgroundTransparency = 2.000
+player_2.BorderSizePixel = 0
+player_2.Position = UDim2.new(0, 0, 9.28614412e-08, 0)
+player_2.Size = UDim2.new(0.935192645, 0, 0.0454440527, 0)
+player_2.Visible = false
+player_2.Font = Enum.Font.GothamSemibold
+player_2.Text = "OnlyTwentyCharacters"
+player_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+player_2.TextScaled = true
+player_2.TextSize = 14.000
+player_2.TextWrapped = true
+
+Scripts.Name = "Scripts"
+Scripts.Parent = BanGUI
+
+Open.Name = "Open"
+Open.Parent = BanGUI
+Open.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+Open.BorderSizePixel = 0
+Open.Position = UDim2.new(0, 0, 0.769972444, 0)
+Open.Size = UDim2.new(0, 124, 0, 26)
+Open.Font = Enum.Font.GothamBold
+Open.Text = "Open Ban Menu"
+Open.TextColor3 = Color3.fromRGB(255, 255, 255)
+Open.TextScaled = true
+Open.TextSize = 14.000
+Open.TextWrapped = true
+
+UIAspectRatioConstraint_16.Parent = Open
+UIAspectRatioConstraint_16.AspectRatio = 4.769
+
+-- Scripts:
+
+local function LNGZZ_fake_script() -- ScrollingFrame.LocalScript 
+	local script = Instance.new('LocalScript', ScrollingFrame)
+
+	game.Players.PlayerAdded:Connect(function(plr)
+		local template = script.Parent.Parent.Parent.Parent.Template.player
+		local newbttn = template:Clone()
+		newbttn.Name = plr.Name
+		newbttn.Text = plr.Name
+		newbttn.Parent = script.Parent
+		newbttn.Visible = true
+	end)
+	
+	game.Players.PlayerRemoving:Connect(function(plr)
+		script.Parent:FindFirstChild(plr.Name):Destroy()
+	end)
+	
+	function destroy()
+		for i,v in pairs(script.Parent:GetChildren()) do
+			if v:IsA("TextButton") then
+				destroy()
+			end
+		end
+	end
+	
+	wait(2)
+	destroy()
+	for i,v in pairs(game.Players:GetChildren()) do
+		local cl = script.Parent.Parent.Parent.Parent.Template.player:Clone()
+		cl.Name = v.Name
+		cl.Text = v.Name
+		cl.Parent = script.Parent
+		cl.Visible = true
+	end
+end
+coroutine.wrap(LNGZZ_fake_script)()
+local function ELJV_fake_script() -- ban.LocalScript 
+	local script = Instance.new('LocalScript', ban)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.Ban:FireServer(script.Parent.Parent.player.Text,script.Parent.Parent.reason.Text,script.Parent.Parent.time.Text,script.Parent.Parent.status)
+	end)
+end
+coroutine.wrap(ELJV_fake_script)()
+local function XHARLE_fake_script() -- unban.LocalScript 
+	local script = Instance.new('LocalScript', unban)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.Unban:FireServer(script.Parent.Parent.player.Text,script.Parent.Parent.status)
+	end)
+end
+coroutine.wrap(XHARLE_fake_script)()
+local function UMDGCQ_fake_script() -- player_2.LocalScript 
+	local script = Instance.new('LocalScript', player_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local gui = game.Players.LocalPlayer.PlayerGui.BanGUI.Main.Ban.player
+		gui.Text = script.Parent.Text
+	end)
+end
+coroutine.wrap(UMDGCQ_fake_script)()
+local function CODWT_fake_script() -- Scripts.BanHandler 
+	local script = Instance.new('Script', Scripts)
+
+	
+	local datastoreservice = game:GetService("DataStoreService") -- These two lines are the datastores
+	local bandata = datastoreservice:GetDataStore("TimedBans")
+	
+	script.Parent.Parent.Ban.OnServerEvent:Connect(function(plr,plrtoban,reason,days,status) -- When you fire the server
+		local uid = game.Players:GetUserIdFromNameAsync(plrtoban) -- If they aren't in the server, it gets the id anyway with no error unless it's an invalid name
+		local ostime = os.time() -- Time
+		local days = tonumber(days) -- Because we used a string, we need to convert it into a number for the multiplication to work
+		local d = days * 86400 -- Multiplies by how many seconds are in a day
+		local length = d + ostime -- Lengh of the ban
+		local table2 = {uid,length,reason} -- I made a table here but you could of done bandata:SetAsync(uid,{uid,length,reason})
+		bandata:SetAsync(uid,table2) -- Store the data
+		status.Text = "Banned: "..plrtoban..""
+		if game.Players:FindFirstChild(plrtoban) == nil then
+			print("Not in server")
+		else
+			game.Players:FindFirstChild(plrtoban):Kick("You have been banned\n For: "..reason.."") -- Kick if they are in the server
+		end
+	end)
+	
+	
+end
+coroutine.wrap(CODWT_fake_script)()
+local function UULRBWI_fake_script() -- Scripts.UnbanHandler 
+	local script = Instance.new('Script', Scripts)
+
+	
+	local datastoreservice = game:GetService("DataStoreService") -- These two lines are the datastores
+	local bandata = datastoreservice:GetDataStore("TimedBans")
+	
+	
+	script.Parent.Parent.Unban.OnServerEvent:Connect(function(plr,plrtounban,status)
+		local uid = game.Players:GetUserIdFromNameAsync(plrtounban) -- They won't be in the game so we get the id 
+		bandata:SetAsync(uid,{".",".","."}) -- Sets it to something without the id in the first column in the datastore
+		status.Text = "Unbanned: "..plrtounban.."" -- The status message in the gui
+	end)
+	
+	-- Considerably shorter script as its more simpler to unban rather than ban
+end
+coroutine.wrap(UULRBWI_fake_script)()
+local function UUKGRO_fake_script() -- Open.LocalScript 
+	local script = Instance.new('LocalScript', Open)
+
+	-- Ban menu open script
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.Main.Visible == false then
+			script.Parent.Parent.Main.Visible = true
+		else
+			script.Parent.Parent.Main.Visible = false
+		end
+	end)
+end
+coroutine.wrap(UUKGRO_fake_script)()
